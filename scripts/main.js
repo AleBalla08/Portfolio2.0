@@ -1,6 +1,7 @@
 const btnToggle = document.getElementById('btn-toggle-menu');
 const menuToggle = document.querySelector('.menu-toggle')
 const cabecalho = document.querySelector('.cabecalho')
+const scrollBtn = document.getElementById('scroll-btn')
 
 
 
@@ -39,4 +40,16 @@ document.querySelectorAll('.tooltip-container').forEach(container => {
         tooltip.style.opacity = '0';
         tooltip.style.visibility = 'hidden';
     })
+})
+
+scrollBtn.addEventListener('click', ()=>{
+    let windowHeight = window.innerHeight;
+    let currentPosition = window.scrollY;
+    let nextPosition = currentPosition + windowHeight
+
+
+    window.scrollTo({
+        top: nextPosition, 
+        behavior: 'smooth'
+    });
 })
