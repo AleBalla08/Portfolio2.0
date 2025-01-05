@@ -2,6 +2,9 @@ const btnToggle = document.getElementById('btn-toggle-menu');
 const menuToggle = document.querySelector('.menu-toggle')
 const cabecalho = document.querySelector('.cabecalho')
 const scrollBtn = document.getElementById('scroll-btn')
+const aboutBtn = document.getElementById('about-btn')
+const projBtn = document.getElementById('projects-btn')
+const homeBtn = document.getElementById('home-btn')
 
 
 
@@ -53,3 +56,51 @@ scrollBtn.addEventListener('click', ()=>{
         behavior: 'smooth'
     });
 })
+
+aboutBtn.addEventListener('click', () => {
+    const aboutPage = document.getElementById('about-page');
+    aboutPage.scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
+projBtn.addEventListener('click', () => {
+    const projectsPage = document.getElementById('projects-page');
+    projectsPage.scrollIntoView({
+        behavior: 'smooth'
+    });
+});
+
+homeBtn.addEventListener('click', ()=>{
+    const top = document.querySelector('.container')
+    top.scrollIntoView({
+        behavior: 'smooth'
+    });
+})
+
+document.addEventListener("scroll", () => {
+    const elements = document.querySelectorAll('.hidden');
+
+    elements.forEach(element => {
+        const rect = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+
+        if (rect.top < windowHeight * 0.9 && !element.classList.contains('visible')) { 
+            element.classList.add('visible');
+        }
+    });
+});
+
+document.addEventListener('scroll', ()=>{
+
+    const text = document.querySelector('.about-me-text-hidden')
+    const rect = text.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    if (rect.top < windowHeight * 0.9){
+        text.classList.add('about-me-text-show')
+    }
+})
+
+
+

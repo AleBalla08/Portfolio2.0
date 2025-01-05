@@ -25,15 +25,15 @@
         </span>
         <div class="menu-toggle">
             
-                <span class="material-symbols-outlined size-40">
+                <span class="material-symbols-outlined size-40" id="home-btn">
                     home
                 </span>
             
-                <span class="material-symbols-outlined size-40 tooltip-container" data-tooltip="About me">
+                <span class="material-symbols-outlined size-40 tooltip-container" data-tooltip="About me" id="about-btn">
                     Person
                 </span>
 
-                <span class="material-symbols-outlined size-40 tooltip-container" data-tooltip="Projects">
+                <span class="material-symbols-outlined size-40 tooltip-container" data-tooltip="Projects" id="projects-btn">
                     Toolbar
                 </span>
         </div>
@@ -69,6 +69,25 @@
         
     </div>
 
+    <div style="position: absolute; margin-top: 100vh;" id="about-page">
+        <div>
+            <img src="./assets/fotominhaportfolio.png" alt="foto minha" class="hidden my-photo">
+        </div>
+        <div class="about-me-text-hidden">
+            <h1>Me chamo <strong>Alexandre Ballardin</strong></h1> 
+            <br>
+            <h3>e sou um <strong>Desenvolvedor Front-End</strong> com conhecimentos em HTML, CSS, JavaScript, Jquery, React e outras tecnologias.</h3>
+            <br>
+            <h3>Nascido e criado em <strong>São Marcos, RS, Brasil,</strong> sou um jovem apaixonado por esportes, principalmente o basquete, o qual pratiquei intensivamente 
+                por 2 anos. Após ser recusado em uma seleção para um time profissional, resolvi me aventurar no mundo da tecnologia e acabei conhecendo a programação, 
+                hoje sou um desenvolvedor e ja atuo na área fazendo uma jornada <strong>Full-Stack</strong>, porem com um foco maior no <strong>Front-End</strong></h3>
+        </div>
+    </div>
+
+    <div style="position: absolute; margin-top: 300vh;" id="projects-page">
+        <h3>projects here</h3>
+    </div>
+
 
    
 
@@ -80,9 +99,7 @@
 
     <script src="scripts/main.js"></script>
 
-    <div style="position: absolute; margin-top: 300vh;">
-        <h3>batata</h3>
-    </div>
+    
     </body>
 
 </html>                                                          
