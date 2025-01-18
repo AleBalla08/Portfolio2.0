@@ -5,6 +5,7 @@ const scrollBtn = document.getElementById('scroll-btn')
 const aboutBtn = document.getElementById('about-btn')
 const projBtn = document.getElementById('projects-btn')
 const homeBtn = document.getElementById('home-btn')
+const projImage = document.querySelectorAll('.project-image')
 
 
 
@@ -93,14 +94,36 @@ document.addEventListener("scroll", () => {
 
 document.addEventListener('scroll', ()=>{
 
-    const text = document.querySelector('.about-me-text-hidden')
-    const rect = text.getBoundingClientRect();
+    const element = document.querySelector('.about-me-text-hidden')
+    const rect = element.getBoundingClientRect();
     const windowHeight = window.innerHeight;
 
     if (rect.top < windowHeight * 0.9){
-        text.classList.add('about-me-text-show')
+        element.classList.add('about-me-text-show')
     }
 })
+
+projImage.forEach((element) => {
+    element.addEventListener('mouseover', () => {
+        if (element.classList.contains('img-left')) {
+            const hover = document.querySelector('.text-image-left');
+            hover.classList.add('show');
+        } else if (element.classList.contains('img-right') ){
+            const hover = document.querySelector('.text-image-right');
+            hover.classList.add('show');
+        }
+    });
+
+    element.addEventListener('mouseout', () => {
+        if (element.classList.contains('img-left')) {
+            const hover = document.querySelector('.text-image-left');
+            hover.classList.remove('show')
+        } else if (element.classList.contains("img-right")) {
+            const hover = document.querySelector('.text-image-right');
+            hover.classList.remove('show');
+        }
+    });
+});
 
 
 

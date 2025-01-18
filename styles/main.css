@@ -209,14 +209,131 @@ strong{
     font-family: var(--fonte-primaria);
 }
 
+.project-image{
+    width: 50rem;
+    height: 25rem;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform-origin: center;
+}
 
+.project-image:hover  {
+    transform: translateY(-10%) scale(1.1); /* Move a imagem para fora e aumenta */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); /* Sombra embaixo */
+    filter: brightness(0.5);
+  }
 
+.text-image-right{
+    font-family: var(--fonte-primaria);
+    pointer-events: none;
+    transition: 1s;
+    color: white;
+    position: absolute;
+    right: -720px;
+    top: 35%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
 
+.text-image-right.show {
+    opacity: 1;
+    visibility: visible;
+}
 
+.text-image-left{
+    font-family: var(--fonte-primaria);
+    pointer-events: none;
+    transition: 1s;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 370px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
 
+.text-image-left.show {
+    opacity: 1;
+    visibility: visible;
+}
 
+.project-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    font-family: var(--fonte-primaria);
+    width: 45rem;
+    height: 25rem;
+    font-size: 1.7em;
+    word-wrap: break-word;
+}
 
+.img-right{
+    position: absolute; 
+    left: 60rem;
+}
 
+.text-right {
+    position: absolute;
+    left: 35.5em;
+}
 
+.img-left{
+    position: absolute;
+    right: -10em;
+}
 
+.text-left{
+    position: absolute;
+    right: -10rem;
 
+}
+
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px; 
+  }
+  
+  .image-container .image-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    border-radius: 10px; 
+  }
+  
+  .image-container:hover .image-text {
+    opacity: 1; 
+  } */
+  
