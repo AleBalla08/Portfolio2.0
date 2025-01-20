@@ -79,29 +79,7 @@ homeBtn.addEventListener('click', ()=>{
     });
 })
 
-document.addEventListener("scroll", () => {
-    const elements = document.querySelectorAll('.hidden');
 
-    elements.forEach(element => {
-        const rect = element.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
-
-        if (rect.top < windowHeight * 0.9 && !element.classList.contains('visible')) { 
-            element.classList.add('visible');
-        }
-    });
-});
-
-document.addEventListener('scroll', ()=>{
-
-    const element = document.querySelector('.about-me-text-hidden')
-    const rect = element.getBoundingClientRect();
-    const windowHeight = window.innerHeight;
-
-    if (rect.top < windowHeight * 0.9){
-        element.classList.add('about-me-text-show')
-    }
-})
 
 projImage.forEach((element) => {
     element.addEventListener('mouseover', () => {

@@ -172,39 +172,33 @@ body{
     width: 500px;
     margin-top: 10em;
     margin-left: 20em;
+    border-radius: 12px;
     
     
 }
 
-.about-me-text-hidden{
+.about-me-text{
     width: 750px;
     height: 500px;
     position: absolute;
-    right: -120%;
-    opacity: 0;
-    bottom: 7%;
-}
-
-.about-me-text-show{
-    right: -100%;
-    opacity: 100%;
-    transition: 2s;
+    left: 1000px;
+    bottom: 3%;
     
 }
 
-.about-me-text-hidden > h1{
+.about-me-text > h1{
     font-size: 40px;
     color: var(--cor-preto);
     font-family: var(--fonte-primaria);
 }
 
-.about-me-text-hidden > h3{
+.about-me-text > h3{
     font-size: 28px;
     color: var(--cor-preto);
     font-family: var(--fonte-primaria);
 }
 
-strong{
+strong {
     color: var(--cor-secundaria);
     font-family: var(--fonte-primaria);
 }
@@ -231,7 +225,7 @@ strong{
     color: white;
     position: absolute;
     right: -720px;
-    top: 35%;
+    top: 120px;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -248,7 +242,7 @@ strong{
     transition: 1s;
     color: white;
     position: absolute;
-    top: 40%;
+    top: 120px;
     left: 370px;
     opacity: 0;
     visibility: hidden;

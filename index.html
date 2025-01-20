@@ -12,9 +12,9 @@
     
    
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sacramento&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
 </head>
 <body>
@@ -70,61 +70,7 @@
     </div>
 
     <div style="position: absolute; margin-top: 100vh;" id="about-page">
-        <div>
-            <img src="./assets/fotominhaportfolio.png" alt="foto minha" class="hidden my-photo">
-        </div>
-        <div class="about-me-text-hidden">
-            <h1>Me chamo <strong>Alexandre Ballardin</strong></h1> 
-            <br>
-            <h3>e sou um <strong>Desenvolvedor Front-End</strong> com conhecimentos em HTML, CSS, JavaScript, Jquery, React e outras tecnologias.</h3>
-            <br>
-            <h3>Nascido e criado em <strong>São Marcos, RS, Brasil,</strong> sou um jovem apaixonado por esportes, principalmente o basquete, o qual pratiquei intensivamente 
-                por 2 anos. Após ser recusado em uma seleção para um time profissional, resolvi me aventurar no mundo da tecnologia e acabei conhecendo a programação, 
-                hoje sou um desenvolvedor e ja atuo na área fazendo uma jornada <strong>Full-Stack</strong>, porem com um foco maior no <strong>Front-End</strong></h3>
-        </div>
-    </div>
-
-    <div style="position: absolute; margin-top: 200vh; max-width: 100vw;" id="projects-page">
-        <div style="position: relative; text-align: center;" id="project1" class="hidden">
-            <div>
-                <a href="https://aleballa08.github.io/Drag-Drop---sticky-note-system/">
-                    <img src="assets/Screenshot 2025-01-18 093748.png" alt="" class="project-image img-right">
-                </a>
-                <h1 class="text-image-right">Visualize Aqui</h1>
-            </div>
-            <div style="position: relative; padding: 1.3em;" class="project-text text-left">
-                <h1>Sticky Notes - Drag&Drop</h1>
-                <h4>Nesse projeto, desenvolvi por meio de HTML, CSS e JavaScript um quadro de tarefas personalizado, onde o usuário tem a possibilidade de criar suas propias notas, com a cor desejada e posicionalas onde quiser.</h4>
-                
-            </div> 
-        </div> 
-
-        <div style="position: relative; padding-top: 5em; padding-bottom: 5em;" id="project2" class="hidden">
-            <div>
-                <a href="https://aleballa08.github.io/Drag-Drop---sticky-note-system/">
-                    <img src="assets/Screenshot 2025-01-18 093748.png" alt="" class="project-image img-left">
-                </a>
-                <h1 class="text-image-left">Visualize Aqui</h1>
-            </div>
-            <div style="position: relative;" class="project-text text-right">
-                <h1>Titulo</h1>
-                <h4>descricaooooooooooooooooooooooooooooooooooooooooooooooooo</h4>
-            </div>
-        </div>
-
-        <div style="position: relative; text-align: center;" id="project3" class="hidden">
-            <div>
-                <a href="https://aleballa08.github.io/Drag-Drop---sticky-note-system/">
-                    <img src="assets/Screenshot 2025-01-18 093748.png" alt="" class="project-image img-right">
-                </a>
-                <h1 class="text-image-right">Visualize Aqui</h1>
-            </div>
-            <div style="position: relative; padding: 1.3em;" class="project-text text-left">
-                <h1>Sticky Notes - Drag&Drop</h1>
-                <h4>Nesse projeto, desenvolvi por meio de HTML, CSS e JavaScript um quadro de tarefas personalizado, onde o usuário tem a possibilidade de criar suas propias notas, com a cor desejada e posicionalas onde quiser.</h4>
-                
-            </div> 
-        </div>  
+        
 
     </div>
 
@@ -138,8 +84,9 @@
     </footer>
 
     <script src="scripts/main.js"></script>
-
-    
-    </body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </html>                                                          
