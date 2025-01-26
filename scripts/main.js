@@ -10,17 +10,17 @@ const projImage = document.querySelectorAll('.project-image')
 
 
 
-c=1
-btnToggle.addEventListener('click', ()=>{
-    if(c===1){
+c = 1
+btnToggle.addEventListener('click', () => {
+    if (c === 1) {
         menuToggle.classList.add('toggle')
         cabecalho.classList.add('toggle-btn')
-        c +=1 
+        c += 1
     }
-    else if(c>1){
+    else if (c > 1) {
         menuToggle.classList.remove('toggle')
         cabecalho.classList.remove('toggle-btn')
-        c -=1 
+        c -= 1
 
     }
 })
@@ -35,25 +35,25 @@ document.querySelectorAll('.tooltip-container').forEach(container => {
 
     container.appendChild(tooltip);
 
-    container.addEventListener('mouseenter', ()=>{
+    container.addEventListener('mouseenter', () => {
         tooltip.style.opacity = '1';
         tooltip.style.visibility = 'visible';
     })
 
-    container.addEventListener('mouseleave', ()=>{
+    container.addEventListener('mouseleave', () => {
         tooltip.style.opacity = '0';
         tooltip.style.visibility = 'hidden';
     })
 })
 
-scrollBtn.addEventListener('click', ()=>{
+scrollBtn.addEventListener('click', () => {
     let windowHeight = window.innerHeight;
     let currentPosition = window.scrollY;
     let nextPosition = currentPosition + windowHeight
 
 
     window.scrollTo({
-        top: nextPosition, 
+        top: nextPosition,
         behavior: 'smooth'
     });
 })
@@ -72,7 +72,7 @@ projBtn.addEventListener('click', () => {
     });
 });
 
-homeBtn.addEventListener('click', ()=>{
+homeBtn.addEventListener('click', () => {
     const top = document.querySelector('.container')
     top.scrollIntoView({
         behavior: 'smooth'
@@ -81,27 +81,7 @@ homeBtn.addEventListener('click', ()=>{
 
 
 
-projImage.forEach((element) => {
-    element.addEventListener('mouseover', () => {
-        if (element.classList.contains('img-left')) {
-            const hover = document.querySelector('.text-image-left');
-            hover.classList.add('show');
-        } else if (element.classList.contains('img-right') ){
-            const hover = document.querySelector('.text-image-right');
-            hover.classList.add('show');
-        }
-    });
 
-    element.addEventListener('mouseout', () => {
-        if (element.classList.contains('img-left')) {
-            const hover = document.querySelector('.text-image-left');
-            hover.classList.remove('show')
-        } else if (element.classList.contains("img-right")) {
-            const hover = document.querySelector('.text-image-right');
-            hover.classList.remove('show');
-        }
-    });
-});
 
 
 
