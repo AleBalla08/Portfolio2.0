@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AB_portfolio</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/base.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sacramento&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+
+
+</head>
+<style>
+    .swiper{
+        position: absolute;
+        left: 50px;
+        text-align: center;
+        align-items: center;
+        width: 1800px;
+        
+    }
+
+    .swiper h1{
+        font-size: 44px;
+        font-family: var(--fonte-primaria);
+    }
+
+    .swiper-slide{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 42px;
+        height: 400px;
+        
+    }
+
+    .card-swiper{
+        background-color: var(--cor-secundaria);
+        width: 350px;
+        height: 350px;
+        align-items: center;
+        text-align: center;
+        padding: 1em;
+        border-radius: 6px;
+        transition: 0.3s ease-in-out;
+        padding-bottom: 200px;
+    }
+
+    .card-swiper:hover {
+    transform: translateY(-5%) scale(1.1);
+    box-shadow: 0 30px 45px rgba(0, 0, 0, 0.5);
+
+}
+
+
+ 
+</style>
+
+<body>
+    <header class="cabecalho">
+        <h3>AB.</h3>
+        <a href="index.html">
+            <button id="btn-return-project">
+                Voltar
+            </button>
+        </a>
+    </header>
+    
+    <section id="project-container">
+        <!-- <div class="project-img-cont">
+            <img class="project-img" src="assets/projeto1.png" alt="">
+        </div>
+        <div class="project-text">
+            <h1>Project Title</h1>
+            <h2>Project Title</h2>
+            <h3>Lorem ipsum dolor sit amet. Sed dignissimos itaque ut repudiandae maiores aut voluptatem dolores. Est similique doloribus est libero dolorum non enim suscipit et eveniet error aut asperiores sunt est ducimus iusto quo optio corrupti.</h3>
+            <button>Access Project</button>
+
+        </div> -->
+    </section>
+
+    <div class="cards-container" data-aos="zoom-in" data-aos-duration="900">
+            
+        
+        
+
+    
+        
+
+        
+
+    <!-- Slider main container -->
+    <div class="swiper" style="margin-bottom: 100px;">
+        <h1>OUTROS PROJETOS</h1>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+        <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="card-swiper">
+                    <img class="card-img" src="assets/projeto3.png" alt="">
+                    <div class="card-desc">
+                        <h4>E-commerce</h4>
+                        <br>
+                        <a href="project.html?id=3"><button>Ver Mais</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card-swiper">
+                    <img class="card-img" src="assets/projeto2.png" alt="">
+                    <div class="card-desc">
+                        <h4>Pomodoro Timer</h4>
+                        <br>
+                        <a href="project.html?id=2"><button>Ver Mais</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card-swiper">
+                    <img class="card-img" src="assets/proj1/projeto1.png" alt="">
+                    <div class="card-desc">
+                        <h4>Sticky NotePad</h4>
+                        <br>
+                        <a href="project.html?id=1"><button>Ver Mais</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card-swiper">
+                    <img class="card-img" src="assets/projeto1.png" alt="">
+                    <div class="card-desc">
+                        <h4>Sticky NotePad</h4>
+                        <br>
+                        <a href="project.html?id=1"><button>Ver Mais</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card-swiper">
+                    <img class="card-img" src="assets/projeto1.png" alt="">
+                    <div class="card-desc">
+                        <h4>Sticky NotePad</h4>
+                        <br>
+                        <a href="project.html?id=1"><button>Ver Mais</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    
+    </div>
+    
+
+
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/openProjects.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+    
+    const swiper = new Swiper('.swiper', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        // effect: 'coverflow',
+        
+        // autoplay: {
+        //     delay: 2000,
+        // },
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        
+            })
+    </script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
