@@ -51,10 +51,9 @@
 
 
 :root{
-    --cor-primaria: #fe565c;
-    --cor-secundaria: white;
-    --cor-tercearia: rgba(77, 170, 222, 1);
-    --cor-preto: #272727;
+    --cor-primaria: #731414;
+    --cor-secundaria: #D9C7C1;
+    --cor-tercearia: #1d0202;
     --fonte-primaria: "Roboto", sans-serif;
     --fonte-secundaria: "Great Vibes", sans-serif;
 }
