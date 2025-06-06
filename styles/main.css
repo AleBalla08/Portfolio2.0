@@ -6,6 +6,10 @@ body {
     height: 100%;
 }
 
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari e Opera */
+}
+
 .tooltip-container {
     position: relative;
     display: inline-block;
@@ -128,7 +132,7 @@ body {
     font-size: 70px;
     color: var(--cor-secundaria);
     position: absolute;
-    right: 31%;
+    right: 34%;
     top: 48%;
 }
 
@@ -461,6 +465,10 @@ strong {
     background-color: var(--cor-secundaria);
     border-color: var(--cor-secundaria);
     color: #260101;
+}
+
+.swiper-button-prev, .swiper-button-next, .swiper-pagination{
+    color: black !important;
 }
 
 
